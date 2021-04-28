@@ -19,7 +19,7 @@ namespace AndresRamosExamen
         private async void OnButtonClicked(object sender, EventArgs args)
         {
           
-            if (txtUsuario.Text != "estudiante2021" && txtPassword.Text != "uisrael2021")
+            if (txtUsuario.Text == "estudiante2021" && txtPassword.Text == "uisrael2021")
             {
                 await Navigation.PushAsync(new Registro(txtUsuario.Text, txtPassword.Text));
             }
