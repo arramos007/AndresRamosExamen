@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndresRamosExamen.Login">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+        </Frame>
+        <Label Text="INGRESO AL SISTEMA EXAMEN" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtUsuario" 
+                   HorizontalTextAlignment="Center" 
+                   Placeholder="Ingrese su Usuario" 
+                   Keyboard="Text">
+        </Entry>
+        <Entry x:Name="txtPassword" 
+                   HorizontalTextAlignment="Center" 
+                   Placeholder="Contraseña" 
+                   Keyboard="Text"
+                   IsPassword="true">
+        </Entry>
+        <Button Text="INGRESAR"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked" />
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndresRamosExamen.Registro">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition  Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre: " FontSize="Title" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtNombre"  
+                   Placeholder="Nombre estudiante aquí"                    
+                   Grid.Row="0"
+                   Grid.Column="1">
+            </Entry>
+            
+            <Label Text="Monto Inicial: " FontSize="Title" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtMontoInicial"  
+                   Placeholder="Monto Inicial aquí"
+                   Keyboard="Numeric"
+                   Grid.Row="1"
+                   Grid.Column="1">
+            </Entry>
+
+            <Label Text="Pago Mensual: " FontSize="Title" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtPagoMensual"  
+                   Placeholder="Pago Mensual aquí"                    
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   IsReadOnly="True">
+            </Entry>
+
+            <Button Text="GUARDAR"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Clicked="OnButtonClickedGrabar" 
+             />
+
+            <Button Text="CALCULAR"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Grid.Row="3"
+                Grid.Column="1"
+                Clicked="OnButtonClickedCalcular"     
+             />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
